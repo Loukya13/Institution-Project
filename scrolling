@@ -1,0 +1,264 @@
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kingster &#8211; College &#8211; HTML Template</title>
+
+    <link rel="stylesheet" href="css/common-skeleton.min.css?" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/tooltip.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/elegant-font.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/page-builder.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="plugins/revslider/public/assets/css/rs6.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style-core.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/kingster-style-custom.css" type="text/css" media="all" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" id="gdlr-core-google-font-css"
+        href="https://fonts.googleapis.com/css?family=Jost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=cyrillic%2Clatin%2Clatin-ext%2Ccyrillic-ext%2Cvietnamese&amp;ver=5.5.1"
+        type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400%2C700%7CRoboto:400" rel="stylesheet"
+        property="stylesheet" media="all" type="text/css" />
+
+    <style>
+        td {
+            padding: 35px;
+        }
+
+        tbody,
+        td,
+        table {
+            background-color: #8dd7e5;
+
+        }
+
+        .slider {
+            background: #fff;
+            color: white;
+            height: 75pt;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            cursor: default;
+            user-select: none;
+            touch-action: none;
+        }
+
+        .slider:before {
+            left: 0;
+
+            top: 0;
+        }
+
+        .slider:after,
+        .slider:before {
+            /* background: linear-gradient(
+        to right,
+        #efeef2 0%,
+        hsla(0, 14%, 93%, 0) 100%
+       
+    );  */
+            content: "";
+            height: 75pt;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+
+        #div {
+            width: 500px;
+        }
+
+        .slider:after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        .slider:after,
+        .slider:before {
+            /* background: linear-gradient(
+        to right,
+        #efeef2 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    ); */
+            content: "";
+            height: 75pt;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+
+
+
+        .slider .slide-track-1 {
+            animation: scroll-l 30s linear infinite;
+            display: flex;
+            width: 3500px;
+        }
+
+        .slider .slide {
+            height: 75pt;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .slider .slide img {
+            width: 180px;
+            padding: 1pc;
+            vertical-align: middle;
+            margin: 0 auto;
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .har {
+            padding-left: 41px;
+            padding-top: 0px;
+            padding-bottom: 3px;
+            margin-top: 5px;
+
+        }
+
+        .img-container:hover,
+        .img-container:active {
+            filter: brightness(100%);
+            transform: scale(1.2);
+
+        }
+
+        .img-decrptn {
+            text-align: center;
+        }
+
+        .img-container {
+
+
+            padding: 5px;
+            align-items: center;
+            height: 217px;
+
+            border-radius: 25px;
+
+
+        }
+
+        .textwidget {
+            margin-top: 5px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 100px 25px 50px;
+            padding: 3px 50px 8px 20px;
+            background-color: black;
+            border-radius: 10px;
+            word-spacing: 5px;
+            border-spacing: 20;
+            width: 100%;
+
+
+        }
+
+        .text1 {
+            height: 40px;
+            width: 15px;
+            font-family: cursive;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        @keyframes scroll-l {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 7));
+            }
+        }
+
+        @keyframes scroll-r {
+            100% {
+                transform: translateX(0);
+            }
+
+            0% {
+                transform: translateX(calc(-250px * 7));
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide-track-1">
+            <div class="slide">
+                <img src="cognizent.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="wipro.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="TCS.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="Tech_Mahindra.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="cognizent.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="wipro.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="TCS.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="Tech_Mahindra.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="cognizent.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="wipro.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="TCS.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="Tech_Mahindra.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="cognizent.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="wipro.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="TCS.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="Tech_Mahindra.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
